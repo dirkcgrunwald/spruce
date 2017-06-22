@@ -359,7 +359,9 @@ void control_connect()
 
   //send a NOOP to sink, wait for response.
   cmd = CONTROL_NOOP;
-  write(tcp_control_socket,&cmd,sizeof(cmd));
+  if ( write(tcp_control_socket,&cmd,sizeof(cmd)) < 0 ) {
+    perror("write");
+  }
   FD_ZERO(&rset);
   FD_SET(tcp_control_socket,&rset);
  
@@ -385,11 +387,14 @@ void control_exit(){
   char ack;
   fd_set rset;
   struct timeval timeout;
-  int sret,rret;
+  int sret;
 
   cmd = CONTROL_EXIT;
 
-  write(tcp_control_socket,&cmd,sizeof(cmd));
+  if ( write(tcp_control_socket,&cmd,sizeof(cmd)) < 0 ) {
+    perror("write");
+    exit(1);
+  }
   
   bzero(&timeout,sizeof(timeout));
   timeout.tv_sec = 20;
@@ -397,7 +402,10 @@ void control_exit(){
   FD_SET(tcp_control_socket,&rset);
   sret = select(tcp_control_socket+1,&rset,NULL,NULL,&timeout);
   if(sret > 0 && FD_ISSET(tcp_control_socket,&rset)){
-    rret=read(tcp_control_socket,&ack,sizeof(ack));
+    if ( read(tcp_control_socket,&ack,sizeof(ack)) < 0 ) {
+      perror("read");
+      exit(1);
+    }
     close(tcp_control_socket);
     
   }
@@ -411,7 +419,10 @@ long get_spruce_rate(){
   {
     char cmd;
     cmd = CONTROL_SPRUCE_OUTPUT;
-    write(tcp_control_socket, &cmd, sizeof(cmd));
+    if ( write(tcp_control_socket, &cmd, sizeof(cmd)) < 0 ) {
+      perror("write");
+      exit(1);
+    }
   }
   
   //read the ack from the sink
