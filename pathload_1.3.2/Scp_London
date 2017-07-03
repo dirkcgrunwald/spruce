@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Securely copies the latest files to the London instance
+# Version 07/03/2017
+# Author Gloire Rubambiza
+
+scp Repeater_Agent_RcvLondon.py FileCreation Dir_Creation ec2-user@ec2-35-177-28-108.eu-west-2.compute.amazonaws.com:pathload_1.3.2

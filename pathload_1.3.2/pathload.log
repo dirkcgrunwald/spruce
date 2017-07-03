@@ -1,0 +1,258 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Receiver ubuntu starts measurements at sender localhost on Tue Jun 27 16:31:26 2017 
+  Maximum packet size          :: 21900 bytes
+  send latency @sndr           :: 14 usec
+  recv latency @rcvr           :: 10 usec
+  Minimum packet spacing       :: 28 usec
+  Max rate(max_pktsz/min_time) :: 6265.14Mbps
+  ADR [....]                   :: 10964.00Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=3132.57Mbps, L=21900B, K=100packets, T=56usec
+  Lossrate per stream   :: :90.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-3132.57Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=1566.29Mbps, L=21900B, K=100packets, T=112usec
+  Lossrate per stream   :: :59.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-1566.29Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 2
+  Fleet Parameter(req)  :: R=783.14Mbps, L=21900B, K=100packets, T=224usec
+  Lossrate per stream   :: :10.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 3: 1: 1: 1: 1: 1: 2: 1: 1: 1: 1
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 9: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=783.14Mbps, L=21900B, K=100packets, T=224usec
+  PCT metric/stream[22] :: 0.43:0.25:0.00:0.25:0.25:0.25:0.25:0.12:0.38:0.38:0.50:0.38:0.12:0.50:0.62:0.25:0.50:0.38:0.38:0.38:0.25:0.38:
+  PDT metric/stream[22] :: -0.22:-0.57:-1.00:-0.33:-0.07:-0.19:-0.23:-0.98:-0.14:0.12:-0.02:-0.11:-0.60:0.13:0.28:0.86:0.03:0.14:-0.47:0.00:-0.16:-0.22:
+  PCT Trend/stream [22] :: NNNNNNNNNNUNNUINUNNNNN
+  PDT Trend/stream [22] :: NNNNNNNNNNNNNNNINNNNNN
+  Trend per stream [22] :: NNNNNNNNNNNNNNUUNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 783.14-1566.29Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 3
+  Fleet Parameter(req)  :: R=1177.34Mbps, L=21900B, K=100packets, T=149usec
+  Lossrate per stream   :: :33.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 783.14-1177.34Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 783.14 - 1177.34 (Mbps)
+Measurements finished at Tue Jun 27 16:31:29 2017 
+Measurement latency is 3.07 sec 
+
+
+
+
+Receiver ubuntu starts measurements at sender ec2-54-153-49-4.us-west-1.compute.amazonaws.com on Sun Jul  2 16:18:40 2017 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 1 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 7 usec
+  Max rate(max_pktsz/min_time) :: 1714.29Mbps
+  ADR [.....]                  :: -0.00Mbps (I)
+  Grey bandwidth resolution    :: -0.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=857.14Mbps, L=1472B, K=100packets, T=14usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-857.14Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=428.57Mbps, L=1472B, K=100packets, T=28usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-428.57Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 2
+  Fleet Parameter(req)  :: R=214.29Mbps, L=1472B, K=100packets, T=56usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-214.29Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 3
+  Fleet Parameter(req)  :: R=107.14Mbps, L=1043B, K=100packets, T=80usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-107.14Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 4
+  Fleet Parameter(req)  :: R=53.57Mbps, L=508B, K=100packets, T=80usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-53.57Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 5
+  Fleet Parameter(req)  :: R=26.79Mbps, L=240B, K=100packets, T=80usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-26.79Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 6
+  Fleet Parameter(req)  :: R=13.41Mbps, L=200B, K=100packets, T=136usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-13.41Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 7
+  Fleet Parameter(req)  :: R=6.71Mbps, L=200B, K=100packets, T=272usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-6.71Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 8
+  Fleet Parameter(req)  :: R=3.35Mbps, L=200B, K=100packets, T=544usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-3.35Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 9
+  Fleet Parameter(req)  :: R=1.68Mbps, L=200B, K=100packets, T=1088usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-1.68Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 10
+  Fleet Parameter(req)  :: R=0.84Mbps, L=200B, K=100packets, T=2176usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.84Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 11
+  Fleet Parameter(req)  :: R=0.42Mbps, L=200B, K=100packets, T=4352usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.42Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 12
+  Fleet Parameter(req)  :: R=0.21Mbps, L=200B, K=100packets, T=8704usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.21Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 13
+  Fleet Parameter(req)  :: R=0.10Mbps, L=200B, K=100packets, T=17408usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.10Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 14
+  Fleet Parameter(req)  :: R=0.05Mbps, L=200B, K=100packets, T=34816usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.05Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 15
+  Fleet Parameter(req)  :: R=0.03Mbps, L=200B, K=100packets, T=69632usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.03Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 16
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=139264usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 17
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 18
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 19
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 20
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 21
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 22
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 23
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 24
+  Fleet Parameter(req)  :: R=0.01Mbps, L=200B, K=100packets, T=200000usec
+  Lossrate per stream   :: :100.0
+  Fleet aborted due to high lossrate
+  Rmin-Rmax             :: 0.00-0.01Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps

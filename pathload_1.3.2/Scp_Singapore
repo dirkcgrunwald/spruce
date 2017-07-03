@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Securely copies files to the Singapore instance
+# Version 07/03/2017
+# Author Gloire Rubambiza
+
+scp Repeater_Agent_RcvSingapore.py FileCreation Dir_Creation ec2-user@ec2-54-251-161-75.ap-southeast-1.compute.amazonaws.com:pathload_1.3.2

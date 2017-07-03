@@ -1,0 +1,16 @@
+#!/usr/bin/python3.4
+
+# Runs a generic traceroute between the given hosts
+# Author Gloire Rubambiza
+# Version 07/03/2017
+
+import subprocess
+
+try:
+    sender= "some_ip_address"
+    return_code = subprocess.call(["traceroute", sender])
+except TimeoutExpired:
+    print("The child process is done running traceroute\n")
+
+
+
