@@ -4,4 +4,4 @@
 # Version 07/03/2017
 # Author Gloire Rubambiza
 
-scp Repeater_Agent_RcvJapan.py FileCreation Dir_Creation gloire@35.189.155.129 
+scp ReceiverJapan.py FileCreation Dir_Creation gloire@35.190.232.50:pathload_1.3.2 

@@ -11,9 +11,9 @@ import time
 
 # Get the directory where to send the file for an experiment
 directory = subprocess.check_output("./Dir_Creation", universal_newlines=True)
-print("The day's directory is %s", directory)
+print("The day's directory is %s" % directory)
 directory = directory[:25]
-print("The new day's directory is %s", str(directory))
+print("The new day's directory is %s" % str(directory))
 
 # To be used as the template of return codes
 # It is supposed to be 0, i.e. success every time
@@ -27,24 +27,22 @@ while return_code == 0:
 	try:
 	    filename = subprocess.check_output(["./FileCreation"], universal_newlines=True)
 	    filename = filename[:36]
-	    #f_name = open(filename, "a")
 	except CalledProcessError as cpe:
 	    print("Process of file creation failed!\n")
 	    print("The return code was %d\n", cpe.returncode)
 	    print("The output is %s", str(cpe.ouput))
 
 	try:
-	    sender= "ec2-13-59-133-125.us-east-2.compute.amazonaws.com"
+	    sender= "insert ohio sender's ipaddress"
 	    return_code = subprocess.call(["./pathload_rcv", "-s", sender, "-o", filename])
-	    #f_name.close()
 	except TimeoutExpired:
 	    print("The child process is done running pathload\n")
      
+     # Check the return code before going to sleep
 	# Check the return code before going to sleep
 	# If successful, move the file to its right directory
-	# Run a traceroute before going to sleep
 	if return_code != 0:
-	    print("Return is non-zero, child process failed")
+	    print("Return code error, child process failed")
 	else:
 	    return_code = subprocess.call(["mv", filename, directory])
 	    trace_filename = filename[:33] + "_trace"

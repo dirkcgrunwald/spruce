@@ -25,18 +25,16 @@ print("The return code is %s", return_code)
 # Send the output to the file of the day
 while return_code == 0:
 	try:
-	    filename = subprocess.check_output(["./FileCreation"])
+	    filename = subprocess.check_output(["./FileCreation"], universal_newlines=True)
 	    filename = filename[:36]
-	    #f_name = open(filename, "a")
 	except CalledProcessError as cpe:
 	    print("Process of file creation failed!\n")
 	    print("The return code was %d\n", cpe.returncode)
 	    print("The output is %s", str(cpe.ouput))
 
 	try:
-	    sender= "35.197.45.9"
+	    sender= "35.185.253.55"
 	    return_code = subprocess.call(["./pathload_rcv", "-s", sender, "-o", filename])
-	    #f_name.close()
 	except TimeoutExpired:
 	    print("The child process is done running pathload\n")
      
@@ -47,6 +45,14 @@ while return_code == 0:
 	    print("Return code error, child process failed")
 	else:
 	    return_code = subprocess.call(["mv", filename, directory])
+	    trace_filename = filename[:33] + "_trace"
+	    t_open = open(trace_filename, "w")
+	    try:
+	       return_code = subprocess.call(["traceroute", sender], stdout=t_open)
+	       t_open.close()
+	       return_code = subprocess.call(["mv", trace_filename, directory])
+	    except TimeoutExpired:
+	       print("The traceroute was not successful!\n")
 	time.sleep(60*5)
      
      

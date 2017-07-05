@@ -13,7 +13,7 @@ import time
 start = mytimer()
 
 # Wait until 8 hours have gone by
-while ( mytimer() - start) <= 216000:
+while ( mytimer() - start) <= 288000:
 	try:
 	    return_code = subprocess.call(["./pathload_snd"])
 	except TimeoutExpired:
