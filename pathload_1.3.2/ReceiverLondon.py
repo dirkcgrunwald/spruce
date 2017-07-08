@@ -33,7 +33,7 @@ while return_code == 0:
 	    print("The output is %s", str(cpe.ouput))
 
 	try:
-	    sender= "insert ohio sender's ipaddress"
+	    sender= "ec2-18-220-25-163.us-east-2.compute.amazonaws.com"
 	    return_code = subprocess.call(["./pathload_rcv", "-s", sender, "-o", filename])
 	except TimeoutExpired:
 	    print("The child process is done running pathload\n")

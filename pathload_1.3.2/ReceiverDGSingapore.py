@@ -1,6 +1,6 @@
 #!/usr/bin/python3.4
 
-# Repeats an experiment after a sleep time of 30 minutes
+# Repeats an experiment after a sleep time of 5 minutes
 # Receiver version
 # Author Gloire Rubambiza
 # Version 07/02/2017
@@ -11,9 +11,9 @@ import time
 
 # Get the directory where to send the file for an experiment
 directory = subprocess.check_output("./Dir_Creation", universal_newlines=True)
-print("The day's directory is %s" % directory)
+print("The day's directory is %s", directory)
 directory = directory[:25]
-print("The new day's directory is %s" % str(directory))
+print("The new day's directory is %s", str(directory))
 
 # To be used as the template of return codes
 # It is supposed to be 0, i.e. success every time
@@ -33,7 +33,7 @@ while return_code == 0:
 	    print("The output is %s", str(cpe.ouput))
 
 	try:
-	    sender= "ec2-54-183-234-248.us-west-1.compute.amazonaws.com"
+	    sender= "ec2-54-193-94-196.us-west-1.compute.amazonaws.com"
 	    return_code = subprocess.call(["./pathload_rcv", "-s", sender, "-o", filename])
 	except TimeoutExpired:
 	    print("The child process is done running pathload\n")
